@@ -3,11 +3,7 @@
 
 name: Java CI with Gradle
 
-on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+on: push
 
 jobs:
   build:
@@ -22,5 +18,9 @@ jobs:
         java-version: 1.8
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
+    - name: Check spotless
+      run: ./gradlew spotlessCheck
+    - name: Run tests
+      run: ./gradlew clean test
     - name: Build with Gradle
       run: ./gradlew build

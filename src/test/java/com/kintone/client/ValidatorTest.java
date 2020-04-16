@@ -8,7 +8,7 @@ public class ValidatorTest {
 
     @Test
     public void testCheckContentType() {
-        assertThatCode(() -> Validator.checkContentType("application/octet-stream\n"))
+        assertThatCode(() -> Validator.checkContentType("application/octet-stream"))
                 .doesNotThrowAnyException();
         assertThatCode(() -> Validator.checkContentType("text/plain")).doesNotThrowAnyException();
         assertThatCode(() -> Validator.checkContentType("application/vnd.ms-powerpoint"))

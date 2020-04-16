@@ -35,8 +35,7 @@ import org.apache.http.HttpStatus;
 * <p>The instance of this class holds an HTTP connection inside. Call {@link #close()} to releases
 * any resources associated with the connection when the instance is no longer used.
 */
-public class KintoneClient implements AutoCloseable
-{
+public class KintoneClient implements AutoCloseable {
     private final InternalClient client;
     private final AppClient appClient;
     private final RecordClient recordClient;

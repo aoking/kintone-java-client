@@ -10,7 +10,7 @@ import java.util.List;
 import org.apache.http.HttpStatus;
 
 /**
-* A {@link KintoneClient} is the client for operating Kintone APIs. This is test sentence. 
+* A {@link KintoneClient} is the client for operating Kintone APIs. This is test sentence.
 *
 * <p>To obtain an instance of this class, must use {@link KintoneClientBuilder}.
 *
